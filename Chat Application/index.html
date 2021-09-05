@@ -1,0 +1,239 @@
+<!DOCTYPE htML>
+<title>hello!!!!!!!!!!!</title>
+     <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/responsive.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body onload="myfunction()">
+  <div id="loader" class="loader-bg"width="100%">
+    <div  class="loader">
+     <img src="images/loading.gif" >
+    </div>
+  </div>
+ 
+     
+<div onload="myfunction"class="now" id="now" style="display: none;">
+  
+    <div class="container">
+        <div class="card  max" id="card">
+        <form >
+          <div class="form-group">
+            <img  class="logo"src="images/81074380.png" >
+            <input type="email" class="form-control adjust" id="mail" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+
+            <input type="password" class="form-control adjust" id="pwd" placeholder="Enter password" name="pswd">
+          </div>
+         
+          <button type="button" class="btn btn-primary adjust-1 " onclick="into()">Login</button>
+         
+          <hr>
+          <a href="#" class="adjust-1">forgot password?</a>
+          <button type="button" onclick="account()"class="btn btn-success adjust-2" >Signup/Create acoount</button>
+        </form>
+       
+      </div>
+      <div id="account" style="display: none;">
+          <div class="container">
+        <div class="card">
+        <form >
+          <div class="form-group">
+            <img  class="logo"src="images/81074380.png" >
+            <input type="email" class="form-control adjust" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+
+            <input type="password" class="form-control adjust" id="pass" placeholder="Enter password" name="pswd">
+          </div>
+          <div class="form-group">
+
+            <input type="password" class="form-control adjust"  placeholder="Confirm password" name="pswd">
+          </div>
+         
+         
+          <button type="button" onclick="fun()"class="btn btn-primary adjust-1 "  >Login</button>
+         
+          <hr>
+          <a href="#" class="adjust-1">forgot password?</a>
+        
+        </form>
+       
+      </div>
+      </div>
+    </div>
+  </div> 
+ 
+</div> 
+<div class="navbar" id="navbar" style="display: none;">
+  <a href="#home" class="btn btn-active">Home</a>
+  <a href="#" onclick="openNav()">☰ </a>
+  <!-- <a href="#contact">Contact</a> -->
+  
+    <img src="images/81074380.png" class="push" alt="logo" >
+  
+</div>
+<div class="row" id="chat">
+  <div class="col-sm-3 hide msg media" style="background-color:#e9ecef;">
+   
+    
+    <!-- <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+      <h2>Collapsed Sidebar</h2>
+      <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+    </div> -->
+    
+    <button type="button" onclick="logout()"class="btn btn-success adjust-2" >logout</button></div>
+  <div class="col-sm-6 shadow msg msg-1 extend" id="text"style="background-color:white"> 
+    <div class="active-chat ">
+      <h2>Group-chat</h2>
+    </div> 
+    <div id="mySidebar" style="z-index: 1000000;" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="profile.html">profile</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+        <div class="display" id="msg-field">
+  </div>
+ 
+
+  <div class="input" style="width:100%;" >
+  <input type="text" class="input-1 input" placeholder="type message" id="message"><span><button class="btn btn-primary" id="Send"onclick="submit()"> Send</button></span>
+  </div></div> 
+
+
+  <div class="col-sm-3 msg  media" style="background-color:#e9ecef;">
+  
+     
+        <div class="card user msg " >
+      
+          <div class="card-body">
+            <h4 class="card-title">Profile</h4>
+          
+              <img class="card-img-top" src="images/1.png"  alt="Card image" id="myimg" style="width:50%">
+            <a href="#" class="btn btn-primary stretched-link"  data-toggle="modal"  data-target="#myModal"  onclick="user()"style="margin-top:20% ;">See Profile</a><br>
+          
+           
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div  id="userdata">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>choose an image</p>
+                    <div class="row image">
+                      <div class="col-sm-4" >
+                        <a href="#" onclick="image()"><img src="images/1.png" id="image" style="width:50%;"></a>
+                      </div>
+                      <div class="col-sm-4" >
+                        <a href="#"><img src="images/2.png" style="width:50%;"></a>
+                      </div>
+                      <div class="col-sm-4" >
+                        <a href="#"><img src="images/3.png" style="width:50%;"></a>
+                      </div>
+
+                    </div>
+                    <div class="row image" >
+                      <div class="col-sm-12" >
+                        <label>Username :</label>
+                        <input id="username"type="text" style=" border-bottom: black";><span>
+                          <button id="save" onclick="nice()" class="btn btn-success">save</button>
+                          <h5 id="id" style="color: black;"></h>
+                        </span><span> 
+                        
+                      </div>
+                      <!-- <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+                      <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div> -->
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                
+                </div>
+                
+              </div>
+            </div>
+            </div>
+            
+          </div>
+          
+          </div>
+      
+     
+
+  
+</div>
+
+
+      <!-- <div id="cool" style="background-color:white; display: none;">
+        <h1 style="color:black; ">iii wowowoow</h1>
+      </div>       -->
+        
+    
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script> -->
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCRHkVfj0b-KWo8qodY56VUK9_1E3vtFF8",
+    authDomain: "f-chat-76bb9.firebaseapp.com",
+    databaseURL: "https://f-chat-76bb9.firebaseio.com",
+    projectId: "f-chat-76bb9",
+    storageBucket: "f-chat-76bb9.appspot.com",
+    messagingSenderId: "117133570501",
+    appId: "1:117133570501:web:ab066fdac3d9ae7d2edbac",
+    measurementId: "G-9PCLC0YGN9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+
+</script>
+<script src="t.js"></script>
+<script>
+  function openNav() {
+
+    document.getElementById("mySidebar").style.width = "250px";
+   
+  }
+  
+  function closeNav() {
+   
+    document.getElementById("mySidebar").style.width = "0";
+
+  }
+  var preloder= document.getElementById("loader");
+  var a = document.getElementById("now");
+  function myfunction(){
+    
+    preloder.style.display="none";
+    // a.style.display="block";
+
+  }
+  
+  </script>
+</body> 

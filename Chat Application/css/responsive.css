@@ -1,0 +1,220 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* .main-menu ul>li a {
+        padding: 20px 20px 20px;
+    }
+    .header-search {
+        padding: 15px 0px;
+    } */
+    .push {
+        width: 150px;
+        margin-left: 500px;}
+}
+
+
+/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    .push {
+        width: 150px;
+        margin-left: 200px;
+    }
+   
+}
+
+/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    .push {
+        width: 150px;
+        margin-left: 20px;
+    }
+    .input{
+        width:60%;
+    }
+    .display{
+        height: 400px;
+    }
+    .msg{
+        height: 500px;
+    }
+    .card{
+        width: 100%;
+    }
+    .media{
+        display: none;
+    }
+    .adjust-2{
+        margin-left: 20%;
+        
+    }
+    .max{
+        height: auto;   
+    }
+    body{
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-menu ul>li a {
+        padding: 11px 9px 0 9px;
+    }
+    .full-slider_cont h1 {
+        font-size: 51px;
+        line-height: 61px;
+    }
+    .relative {
+        top: 59%;
+        transform: translateY(-50%);
+    }
+    .banner-main .carousel-caption h1 {
+        font-size: 27px;
+        padding-bottom: 6px;
+        line-height: 38px;
+    }
+    .main_bt {
+        padding: 10px 30px 10px 30px;
+        margin: 21px 0px 21px 0px;
+    }
+    .footer .Newsletter {
+        width: 72%;
+    }
+    ul.location_icon li {
+        padding-right: 20px;
+    } */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .media{
+        display: none!important;
+    }
+   .extend{
+       margin-left: 20%;
+   }
+   .card{
+       width: 70%;
+   }
+   .push{
+       margin-left: 50px;
+   }
+   
+}
+
+@media (max-width: 576px) {
+    .media{
+        display: none!important;
+    }
+
+    
+   
+   
+}
+@media (min-width: 768px) and (max-width: 1000px) { 
+        .card{
+            width:70%;
+        }
+        .card-1{
+            margin-top: 3.2%;
+            margin-left: 25%;
+        }
+
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  #loader{
+    margin: auto;
+      height: 100vh;
+      background-color: #fff;
+      z-index: 999999;
+      justify-content: center;
+
+  }}
+  
+/* *****************************************loader***************************************************** */
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader img {
+    width: 280px;
+}
+.imp{
+    width:85%!important;
+}
